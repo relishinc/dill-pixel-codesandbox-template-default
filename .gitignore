@@ -1,0 +1,12 @@
+/dist
+/public
+node_modules
+creds
+
+# caches
+.cache
+.assetpack
+
+# config
+.env
+.voiceover

@@ -1,0 +1,68 @@
+{
+  "bundles": [
+    {
+      "name": "default",
+      "assets": [
+        {
+          "alias": [
+            "favicon.svg",
+            "favicon.svg"
+          ],
+          "src": [
+            "favicon.svg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "required",
+      "assets": [
+        {
+          "alias": [
+            "required/jar.png",
+            "jar.png"
+          ],
+          "src": [
+            "required/jar@1x.png",
+            "required/jar@0.5x.png"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "required/ui/ui.json",
+            "ui.json"
+          ],
+          "src": [
+            "required/ui/ui@1x.json",
+            "required/ui/ui@0.5x.json"
+          ],
+          "data": {
+            "tags": {
+              "tps": true,
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "required/wordmark.svg",
+            "wordmark.svg"
+          ],
+          "src": [
+            "required/wordmark.svg"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
