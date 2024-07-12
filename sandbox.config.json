@@ -2,8 +2,10 @@
     "template": "node",
     "infiniteLoopProtection": true,
     "hardReloadOnChange": false,
-    "view": "browser",
+    "view": "preview",
+    "disableLogging": false,
     "container": {
       "node": "20"
-    }
+    },
+    "startScript":"pnpm start"
   }
