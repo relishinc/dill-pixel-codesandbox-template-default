@@ -27,14 +27,7 @@ export class Game extends BaseScene {
     this._layout.add.sprite({ asset: 'jar.png', scale: 0.25 });
   }
 
-  // enter / exit animations (basic)
-  async enter() {
-    return this.animate({ alpha: 1, duration: 1, ease: 'sine.out' });
-  }
-
-  async exit() {
-    return this.animate({ alpha: 0, duration: 0.5, ease: 'sine.in' });
-  }
+  
 
   start() { }
 }
