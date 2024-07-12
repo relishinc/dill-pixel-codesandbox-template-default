@@ -13,7 +13,7 @@
     "build": "pnpm clean && vite build",
     "assets": "assetpack -c .assetpack.mjs",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "pnpm dill-pixel install && pnpm dev"
+    "postinstall": "pnpm dill-pixel install && pnpm assets"
   },
   "devDependencies": {
     "@types/dat.gui": "^0.7.13",
