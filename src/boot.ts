@@ -4,14 +4,10 @@ import { Application, LocalStorageAdapter, create, isDev } from 'dill-pixel';
 import { controls } from '@/controls';
 import manifest from './assets.json';
 
-// export class DillPixelApplication extends Application {
-//   // put your application-specific uitlity methods here, if necessary
-// }
-
 async function boot() {
   await create(
     {
-      id: 'DillPixelApplication',
+      id: 'myDillPixelApp',
       // splash: {
       //   view: Splash,
       //   hideWhen: 'firstSceneEnter',

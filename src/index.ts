@@ -1,1 +1,1 @@
-import('@/DillPixelApplication');
+import('@/boot');
