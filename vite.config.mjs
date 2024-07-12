@@ -1,9 +1,7 @@
-import {extendConfig} from 'dill-pixel/config/vite';
-const port = process.env.PORT || 3000;
+import config from 'dill-pixel/config/vite';
 
-export default extendConfig((config) => ({
-    ...config,
-    server: {
-        port,
-    }
-}));
+config.server.port = undefined;
+config.server.host = process.env.CODESANDBOX_SSE ? '0.0.0.0' : undefined;
+config.server.open
+
+export default config;
