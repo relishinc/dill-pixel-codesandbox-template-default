@@ -21,7 +21,7 @@
       "preview": {
         "port": 3000,
         "openMode": "right",
-        "showConsole": true
+        "showConsole": false
       }
     },
     "preview": {
