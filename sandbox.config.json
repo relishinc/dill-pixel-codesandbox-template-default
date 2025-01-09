@@ -1,10 +1,10 @@
 {
-  "template": "node",
   "infiniteLoopProtection": true,
   "view": "preview",
   "disableLogging": false,
   "startScript": null,
   "node": "20",
+  "environment": "node",
   "container": {
     "node": "20"
   }
