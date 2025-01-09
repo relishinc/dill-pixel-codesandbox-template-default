@@ -6,6 +6,5 @@
   "disableLogging": false,
   "container": {
     "node": "20"
-  },
-  "startScript":"pnpm dev"
+  }
 }
