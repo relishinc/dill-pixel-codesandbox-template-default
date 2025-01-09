@@ -16,7 +16,7 @@
     "dev": {
       "name": "Run dev server",
       "command": "pnpm dev",
-      "runAtStart": false,
+      "runAtStart": true,
       "preview": {
         "port": 3000,
         "openMode": "right",
