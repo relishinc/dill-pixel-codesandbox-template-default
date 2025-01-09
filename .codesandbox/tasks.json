@@ -29,19 +29,9 @@
         "port": 5173
       }
     },
-    "prepreview": {
-      "name": "prepreview",
-      "command": "pnpm prepreview",
-      "runAtStart": false
-    },
     "preview": {
       "name": "preview",
       "command": "pnpm preview",
-      "runAtStart": false
-    },
-    "prebuild": {
-      "name": "prebuild",
-      "command": "pnpm prebuild",
       "runAtStart": false
     },
     "build": {
@@ -57,11 +47,6 @@
     "test": {
       "name": "test",
       "command": "pnpm test",
-      "runAtStart": false
-    },
-    "postinstall": {
-      "name": "postinstall",
-      "command": "pnpm postinstall",
       "runAtStart": false
     }
   }

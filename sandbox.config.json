@@ -1,4 +1,11 @@
 {
   "template": "vite",
-  "infiniteLoopProtection": true
+  "infiniteLoopProtection": true,
+  "hardReloadOnChange": false,
+  "view": "preview",
+  "disableLogging": false,
+  "container": {
+    "node": "20"
+  },
+  "startScript":"pnpm dev"
 }
