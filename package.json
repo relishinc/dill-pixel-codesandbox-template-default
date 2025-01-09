@@ -8,8 +8,7 @@
     "dev": "pnpm assets && vite",
     "build": "pnpm assets && vite build",
     "preview": "pnpm build && vite preview",
-    "assets": "assetpack -c .assetpack.mjs",
-    "postinstall": "pnpm dev"
+    "assets": "assetpack -c .assetpack.mjs"
   },
   "dependencies": {
     "dill-pixel": "^4.0.6"
