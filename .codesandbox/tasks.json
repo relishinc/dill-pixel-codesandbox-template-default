@@ -17,6 +17,7 @@
       "name": "Run dev server",
       "command": "pnpm dev",
       "runAtStart": true,
+      "dependsOn": ["Install Dependencies"],
       "preview": {
         "port": 3000,
         "openMode": "right",
@@ -26,21 +27,25 @@
     "preview": {
       "name": "Run preview server",
       "command": "pnpm preview",
+      "dependsOn": ["Install Dependencies"],
       "runAtStart": false
     },
     "build": {
       "name": "Build",
       "command": "pnpm build",
+      "dependsOn": ["Install Dependencies"],
       "runAtStart": false
     },
     "assets": {
       "name": "Assets",
       "command": "pnpm assets",
+      "dependsOn": ["Install Dependencies"],
       "runAtStart": false
     },
     "test": {
       "name": "Test",
       "command": "pnpm test",
+      "dependsOn": ["Install Dependencies"],
       "runAtStart": false
     }
   }
