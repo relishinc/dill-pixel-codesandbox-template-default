@@ -1,9 +1,14 @@
-import { BaseScene } from '@/scenes/BaseScene';
+import BaseScene from '@/scenes/BaseScene';
 import { FONT_KUMBH_SANS } from '@/utils/Constants';
 import { FlexContainer } from 'dill-pixel';
 
-export class Game extends BaseScene {
-  public readonly id = 'Game';
+export const id = 'game';
+
+export const debug = {
+  label:"Game"
+}
+
+export default class Game extends BaseScene {
 
   private _layout: FlexContainer;
 
@@ -25,6 +30,12 @@ export class Game extends BaseScene {
 
     // from src/assets.json
     this._layout.add.sprite({ asset: 'jar.png', scale: 0.25 });
+
+    this._layout.add.text({
+      text: 'Your game goes here',
+      resolution: 2,
+      style: { fontFamily: FONT_KUMBH_SANS, fontWeight: 'bold', fill: 0xffffff, fontSize: 16},
+    });
   }
 
   start() { }

@@ -2,6 +2,8 @@ import BaseScene from '@/scenes/BaseScene';
 import { FONT_KUMBH_SANS } from '@/utils/Constants';
 import { FlexContainer } from 'dill-pixel';
 
+export const id = 'start';
+
 export default class StartScene extends BaseScene {
   public readonly id = 'StartScene';
 
@@ -25,15 +27,18 @@ export default class StartScene extends BaseScene {
 
     // from src/assets.json
     this._layout.add.sprite({ asset: 'jar.png', scale: 0.25 });
-  }
 
-  // enter / exit animations (basic)
-  async enter() {
-    return this.animate({ alpha: 1, duration: 1, ease: 'sine.out' });
-  }
+    this._layout.add.text({
+      text: 'Click to start',
+      resolution: 2,
+      style: { fontFamily: FONT_KUMBH_SANS, fontWeight: 'bold', fill: 0xffffff, fontSize: 16},
+    });
 
-  async exit() {
-    return this.animate({ alpha: 0, duration: 0.5, ease: 'sine.in' });
+    this.eventMode = 'static';
+
+    this.on('pointerup', ()=>{
+      this.app.scenes.loadScene('game')
+    })
   }
 
   start() {}

@@ -37,6 +37,7 @@ export type Data = {
 export const config = defineConfig<Data>({
   id: '__APPLICATION_NAME__',
   defaultSceneLoadMethod: 'immediate',
+  defaultScene: 'start',
   useSpine: true,
   showStats: true,
   showSceneDebugMenu: true,

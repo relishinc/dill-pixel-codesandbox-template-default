@@ -18,7 +18,6 @@ export const active = false;
 export default class BaseScene extends Scene<MyApplication> {
   constructor() {
     super();
-    this.alpha = 0;
     this.addColoredBackground(COLOR_SLATE);
   }
 }
