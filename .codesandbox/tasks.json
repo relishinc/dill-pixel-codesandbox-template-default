@@ -18,7 +18,7 @@
       "command": "pnpm start",
       "runAtStart": false,
       "preview": {
-        "port": 5173
+        "port": 3000
       }
     },
     "dev": {
@@ -26,7 +26,7 @@
       "command": "pnpm dev",
       "runAtStart": false,
       "preview": {
-        "port": 5173
+        "port": 3000
       }
     },
     "preview": {
