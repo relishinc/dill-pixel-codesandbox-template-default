@@ -4,6 +4,10 @@ import { FlexContainer } from 'dill-pixel';
 
 export const id = 'start';
 
+export const debug = {
+  label:"Start",
+}
+
 export default class StartScene extends BaseScene {
   public readonly id = 'StartScene';
 

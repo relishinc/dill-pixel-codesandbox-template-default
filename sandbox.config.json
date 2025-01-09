@@ -1,7 +1,6 @@
 {
   "template": "vite",
   "infiniteLoopProtection": true,
-  "hardReloadOnChange": false,
   "view": "preview",
   "disableLogging": false,
   "container": {
