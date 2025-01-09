@@ -6,24 +6,6 @@
       "command": "pnpm install"
     }
   ],
-  "initTasks":[
-    {
-      "name": "Initialize dev server",
-      "command": "pnpm dev",
-      "openFiles": [
-        "index.html",
-        "src/dill-pixel.config.ts",
-        "src/MyApplication.ts",
-        "src/scenes/StartScene.ts",
-        "src/scenes/Game.ts"
-      ],
-      "preview": {
-        "port": 3000,
-        "openMode": "right",
-        "showConsole": true
-      }
-    }
-  ],
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
     "clean": {
