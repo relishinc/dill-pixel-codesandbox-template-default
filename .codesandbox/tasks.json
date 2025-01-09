@@ -16,7 +16,6 @@
     "dev": {
       "name": "Run dev server",
       "command": "pnpm dev",
-      "runAtStart": true,
       "dependsOn": ["Install Dependencies"],
       "preview": {
         "port": 3000,
