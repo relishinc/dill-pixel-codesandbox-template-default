@@ -6,46 +6,56 @@
       "command": "pnpm install"
     }
   ],
+  "initTasks":[
+    {
+      "name": "Initialize dev server",
+      "command": "pnpm dev",
+      "openFiles": [
+        "index.html",
+        "src/dill-pixel.config.ts",
+        "src/MyApplication.ts",
+        "src/scenes/StartScene.ts",
+        "src/scenes/Game.ts"
+      ],
+      "preview": {
+        "port": 3000,
+        "openMode": "right"
+      }
+    }
+  ],
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
     "clean": {
-      "name": "clean",
+      "name": "Clean",
       "command": "pnpm clean",
       "runAtStart": false
     },
-    "start": {
-      "name": "start",
-      "command": "pnpm start",
-      "runAtStart": false,
-      "preview": {
-        "port": 3000
-      }
-    },
     "dev": {
-      "name": "dev",
+      "name": "Run dev server",
       "command": "pnpm dev",
       "runAtStart": false,
       "preview": {
-        "port": 3000
+        "port": 3000,
+        "openMode": "right"
       }
     },
     "preview": {
-      "name": "preview",
+      "name": "Run preview server",
       "command": "pnpm preview",
       "runAtStart": false
     },
     "build": {
-      "name": "build",
+      "name": "Build",
       "command": "pnpm build",
       "runAtStart": false
     },
     "assets": {
-      "name": "assets",
+      "name": "Assets",
       "command": "pnpm assets",
       "runAtStart": false
     },
     "test": {
-      "name": "test",
+      "name": "Test",
       "command": "pnpm test",
       "runAtStart": false
     }
