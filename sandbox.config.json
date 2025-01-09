@@ -3,6 +3,8 @@
   "infiniteLoopProtection": true,
   "view": "preview",
   "disableLogging": false,
+  "startScript": null,
+  "node": "20",
   "container": {
     "node": "20"
   }
