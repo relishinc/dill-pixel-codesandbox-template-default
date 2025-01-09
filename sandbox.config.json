@@ -1,5 +1,5 @@
 {
-  "template": "vite",
+  "template": "node",
   "infiniteLoopProtection": true,
   "view": "preview",
   "disableLogging": false,
