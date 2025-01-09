@@ -5,7 +5,6 @@
   "private": false,
   "main": "index.html",
   "scripts": {
-    "start": "vite",
     "dev": "pnpm assets && vite",
     "build": "pnpm assets && vite build",
     "preview": "pnpm build && vite preview",
