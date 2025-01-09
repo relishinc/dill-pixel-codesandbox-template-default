@@ -1,0 +1,7 @@
+{
+    "title": "Dill Pixel",
+    "description": "Dill Pixel",
+    "iconUrl": "https://example.com/icon.png",
+    "tags": ["dill-pixel","pixi.js", "game", "typescript"],
+    "published": true
+  }
