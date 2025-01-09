@@ -19,7 +19,8 @@
       ],
       "preview": {
         "port": 3000,
-        "openMode": "right"
+        "openMode": "right",
+        "showConsole": true
       }
     }
   ],
@@ -36,7 +37,8 @@
       "runAtStart": false,
       "preview": {
         "port": 3000,
-        "openMode": "right"
+        "openMode": "right",
+        "showConsole": true
       }
     },
     "preview": {
