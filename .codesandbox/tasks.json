@@ -20,22 +20,6 @@
         "openMode": "right",
         "showConsole": false
       }
-    },
-    "preview": {
-      "name": "Run preview server",
-      "command": "pnpm preview"
-    },
-    "build": {
-      "name": "Build",
-      "command": "pnpm build"
-    },
-    "assets": {
-      "name": "Assets",
-      "command": "pnpm assets"
-    },
-    "test": {
-      "name": "Test",
-      "command": "pnpm test"
     }
   }
 }
