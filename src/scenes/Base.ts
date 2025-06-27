@@ -1,35 +1,33 @@
-import { COLOR_SLATE } from '@/utils/Constants';
-import { Scene } from 'dill-pixel';
+import Base from '@/scenes/Base';
 
-// include this scene in the bundle
-export const dynamic = false;
+export const id = 'game';
+export const debug = {
+  label: 'Game',
+};
 
-// make it inactive in the scene list (debug mode)
-export const active = false;
-
-/**
- * Base scene
- * this is a nice way to make a scene that can be extended by other scenes
- * it also allows you to add custom logic to the scene that can be shared across scenes
- * commented out is an example of how you can use enter / exit animations
- */
-export default class Base extends Scene {
-  constructor() {
-    super();
-    this.addColoredBackground(COLOR_SLATE);
-
-    // // for enter / exit animations you could start the scene with 0 opacity, and fade in / out
-    // this.alpha = 0;
+export default class Game extends Base {
+  initialize() {
+    // some title text
+    this.add.text({
+      text: 'My Game',
+      style: { fontFamily: 'KumbhSans', fontSize: 48, fill: 0xffffff },
+    });
   }
 
-  // // enter / exit animations (basic)
-  // async enter() {
-  // // fade in on enter
-  //   return this.animate({ alpha: 1, duration: 1, ease: 'sine.out' });
-  // }
+  destroy() {
+    super.destroy();
+    // clean up the scene when it gets removed
+  }
 
-  // async exit() {
-  // // fade out on exit
-  //   return this.animate({ alpha: 0, duration: 0.5, ease: 'sine.in' });
-  // }
+  start() {
+    // start the scene's jobs here
+  }
+
+  resize() {
+    // any layout changes on resize go here
+  }
+
+  update() {
+    // the game loop
+  }
 }
