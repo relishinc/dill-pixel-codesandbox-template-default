@@ -12,7 +12,7 @@
     "build": "pnpm clean && dill-pixel build"
   },
   "dependencies": {
-    "dill-pixel": "^6.2.1"
+    "dill-pixel": "^6.2.2"
   },
   "peerDependencies": {
     "@pixi/sound": "^6.0.1",
