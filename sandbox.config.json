@@ -5,6 +5,5 @@
   "disableLogging": false,
   "container": {
     "node": "20"
-  },
-  "startCommand": "pnpm dev"
+  }
 }

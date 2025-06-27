@@ -10,8 +10,6 @@ export const active = false;
 /**
  * Base scene
  * this is a nice way to make a scene that can be extended by other scenes
- * it casts the scene to the application type,
- * so you can access the application's properties and methods in all scenes extending this one
  * it also allows you to add custom logic to the scene that can be shared across scenes
  * commented out is an example of how you can use enter / exit animations
  */
