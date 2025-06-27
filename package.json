@@ -5,12 +5,18 @@
   "private": false,
   "main": "index.html",
   "scripts": {
-    "dev": "pnpm assets && vite",
-    "build": "pnpm assets && vite build",
-    "preview": "pnpm build && vite preview",
-    "assets": "assetpack -c .assetpack.mjs"
+    "clean": "rimraf .assetpack .cache dist",
+    "start": "pnpm clean && dill-pixel start",
+    "dev": "pnpm clean && dill-pixel dev",
+    "preview": "pnpm clean && dill-pixel preview",
+    "build": "pnpm clean && dill-pixel build"
   },
   "dependencies": {
-    "dill-pixel": "latest"
+    "dill-pixel": "^6.2.1"
+  },
+  "peerDependencies": {
+    "@pixi/sound": "^6.0.1",
+    "gsap": "^3.12.5",
+    "pixi.js": "^8.10.2"
   }
 }

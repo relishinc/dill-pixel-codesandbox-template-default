@@ -1,1 +1,1 @@
-import('@/bootstrap');
+import('dill-pixel-runtime');
