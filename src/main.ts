@@ -2,8 +2,8 @@
 // otherwise, the runtime will boostrap your app with your dill-pixel.config.ts
 // and pass it to "main" below
 
-import { CliTestApp } from './CliTestApp';
+import { MyApplication } from '@/MyApplication';
 
-export default async function main(app: CliTestApp) {
+export default async function main(app: MyApplication) {
   console.log(app);
 }
